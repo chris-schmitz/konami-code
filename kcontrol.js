@@ -39,8 +39,10 @@ function kcontrol(key){
         clearIndicator();
     } else if (currentCode.length == fullCode.length) {
         updateIndicator(currentCode.length - 1);
-        // fire function at the end of a successful konami code entering
+       
+       // This should be whatever javascript method or function you want fired on a successful code completion.
         awwwYeah();
+
         currenCode = [];
         clearIndicator();
     } else {
